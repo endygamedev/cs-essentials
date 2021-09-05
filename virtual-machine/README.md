@@ -3,7 +3,7 @@
 
 ## What is this?
 ###### Short description
-**Stack machine** -- is computer processor or a virtual machine in which the primary interaction is moving short-lived temporary values to and from a push down stack.
+**Stack machine** is computer processor or a virtual machine in which the primary interaction is moving short-lived temporary values to and from a push down stack.
 ###### View full in [Wiki](https://en.wikipedia.org/wiki/Stack_machine)
 
 ## Example
