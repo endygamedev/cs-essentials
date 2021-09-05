@@ -16,10 +16,10 @@ bool running = true;
 
 // Instructions for our program
 typedef enum {
-    PSH,    /* Adds an item to the stack; */
-    ADD,    /* Pops two elements from the top of the stack and adds them, the result pushes to the stack; */
+    PSH,    /* Add an item to the stack; */
+    ADD,    /* Pop two elements from the top of the stack and adds them, the result pushes to the stack; */
     POP,    /* Pop an element from the top of the stack and display it on the screen; */
-    SET,    /* Sets register to value; */
+    SET,    /* Set register to value; */
     HLT     /* Stop the program; */
 } InstructionSet;
 
