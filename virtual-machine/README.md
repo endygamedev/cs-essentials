@@ -1,4 +1,4 @@
-# Virtual stack machine
+# `Virtual stack machine`
 
 
 ## What is this?
