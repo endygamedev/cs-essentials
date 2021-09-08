@@ -8,7 +8,7 @@ This repository contains essential things from CS which everyone should know and
 1. HTTP Server *(Not implemented yet)*
 1. Shell *(Not implemented yet)*
 1. Garbage Collector *(Not implemented yet)*
-1. Intepreter *(Not implemented yet)*
+1. [Intepreter](/interpreter)
 
 ## License
 `cs-essentials` is licensed under the [MIT License](/LICENSE).
