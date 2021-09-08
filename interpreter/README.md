@@ -1,7 +1,14 @@
-# Interpreter
+# `Interpreter from scratch`
 
-## Steps
-###### Java Interpreter with JVM
+## What is this?
+###### Short description
+**Interpreter** is a computer program that directly executes instructions written in a programming or scripting language, without requiring them previously to have been compiled into a machine language program.
+###### View full in [Wiki](https://en.wikipedia.org/wiki/Interpreter_(computing))
+
+## Implementation steps
+The implementation will be presented on *Java* and *C*.
+
+**Java Interpreter with JVM**
 - [x] Scanner
 - [ ] Representing Code
 - [ ] Parsing Expressions
@@ -13,7 +20,7 @@
 - [ ] Classes
 - [ ] Inheritance
 
-###### C Interpreter
+**C Interpreter**
 - [ ] Chunks of Bytecode
 - [ ] A Virtual Machine
 - [ ] Scanning on Demand
