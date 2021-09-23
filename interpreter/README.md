@@ -10,7 +10,7 @@ The implementation will be presented on *Java* and *C*.
 
 **Java Interpreter with JVM**
 - [x] Scanner
-- [ ] Representing Code
+- [x] Representing Code
 - [ ] Parsing Expressions
 - [ ] Evaluating Expressions
 - [ ] Statements and State
@@ -39,5 +39,13 @@ The implementation will be presented on *Java* and *C*.
 - [ ] Superclasses
 - [ ] Optimization
 
+## Usefull links
+###### Block: Representing Code
+- [BNF.md](./BNF.md)
+- [Wiki: Chomsky hierarchy](https://en.wikipedia.org/wiki/Chomsky_hierarchy)
+- [Wiki: Formal grammar](https://en.wikipedia.org/wiki/Formal_grammar)
+- [Wiki: Backus-Naur form (BNF)](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form)
+- [Wiki: Extended Backus-Naur form (EBNF)](https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form)
+
 ## Article
-[Crafting Interpreters](https://craftinginterpreters.com/)
+[Robert Nystrom — «Crafting Interpreters»](https://craftinginterpreters.com/)

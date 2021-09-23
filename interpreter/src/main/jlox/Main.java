@@ -1,4 +1,4 @@
-package com.company;
+package main.jlox;
 
 public class Main {
 

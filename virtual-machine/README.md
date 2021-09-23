@@ -24,4 +24,4 @@ HLT     ;   /* Exit the program and clear all variables */
 ```
 
 ## Article
-[How to implement Virtual Machine in C](https://felix.engineer/blogs/virtual-machine-in-c)
+[Felix Angell — «How to implement Virtual Machine in C»](https://felix.engineer/blogs/virtual-machine-in-c)

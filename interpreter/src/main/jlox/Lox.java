@@ -1,4 +1,4 @@
-package com.company;
+package main.jlox;
 
 import java.io.BufferedReader;
 import java.io.IOException;

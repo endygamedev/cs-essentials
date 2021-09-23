@@ -1,4 +1,4 @@
-package com.company;
+package main.jlox;
 
 class Token {
     final TokenType type;
