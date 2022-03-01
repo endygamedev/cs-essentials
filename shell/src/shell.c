@@ -15,7 +15,7 @@
 
 #define SHELL_RL_BUFSIZE    1024            /* Readline buffer size */
 #define SHELL_TOK_BUFSIZE   64              /* Token buffer size */
-#define SHELL_TOK_DELIM     " \t\r\n\a"     /* Toke delimiter */
+#define SHELL_TOK_DELIM     " \t\r\n\a"     /* Token delimiter */
 #define HOSTNAME_MAX        64              /* Hostname max size */
 
 
