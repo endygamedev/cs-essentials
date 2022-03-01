@@ -6,7 +6,7 @@ This repository contains essential things from CS which everyone should know and
 1. System Call *(Not implemented yet)*
 1. Hash table *(Not implemented yet)*
 1. HTTP Server *(Not implemented yet)*
-1. Shell *(Not implemented yet)*
+1. [Shell](/shell)
 1. Garbage Collector *(Not implemented yet)*
 1. [Intepreter](/interpreter)
 
