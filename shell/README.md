@@ -1,3 +1,5 @@
+<p align="right"><sub>cs-essentials</sub></p>
+
 # `Shell`
 
 ## What is this?
