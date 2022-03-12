@@ -23,7 +23,7 @@ Thus, the shell acts as an intermediary between the process call and the user in
 ## Built-in commands
 Of course, there are not all implemented processes and some things you have to do yourself. For example, commands such as: `cd`, `help`, `exit` etc.
 
-For this purpose a header [`commands.h`](/src/commands.h) was created in which the built-in commands are specified.
+For this purpose a header [`commands.h`](./src/commands.h) was created in which the built-in commands are specified.
 
 ## Article
 [Stephen Brennan — «Write a Shell in C»](https://brennan.io/2015/01/16/write-a-shell-in-c/)
