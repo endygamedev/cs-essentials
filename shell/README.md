@@ -1,6 +1,4 @@
-<p align="right"><sub>cs-essentials</sub></p>
-
-# `Shell`
+# `Unix shell`
 
 ## What is this?
 ###### Short description
