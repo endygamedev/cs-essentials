@@ -1,6 +1,15 @@
+/**
+ * @name    Garbage Collector implementation
+ * @author  Egor Bronnikov
+ * @edited  13-03-2022
+ * */
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
-#include "gc.h"
+
+#include "gc.h"             //< Garbage Collector and Virtual Machine header
 
 
 

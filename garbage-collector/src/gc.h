@@ -1,8 +1,43 @@
-#define STACK_MAX 256
-#define INIT_OBJ_NUM_MAX 4
+/**
+ * @header  GARBAGE COLLECTOR
+ *
+ * @brief   This file contains all the necessary functions and data structures to implement the garbage collector.
+ */
 
 
 
+#ifndef _STDLIB_H
+#include <stdlib.h>
+#endif
+
+
+
+#define STACK_MAX 256           //< Maximum stack size
+#define INIT_OBJ_NUM_MAX 4      //< Initinal number of collected objects
+
+
+
+/**
+ * @fn      void assert(int condition, const char* message)
+ *
+ * @brief   If a condition is not met, a message is displayed
+ *          on the screen and the program aborts with exit code 1.
+ *
+ * @param   condition   The result of logical expression.
+ * @param   message     The message that will be printed.
+ *
+ * @return  None
+ */
+void assert(int condition, const char* message) {
+    if(!condition) {
+        printf("%s\n", message);
+        exit(1);
+    }
+}
+
+
+
+/* @brief   We got two types of objects: ints and pairs */
 typedef enum {
     OBJ_INT,
     OBJ_PAIR
@@ -10,41 +45,36 @@ typedef enum {
 
 
 
+/* @brief   The data sctucture of the object that we will use in the future. */
 typedef struct sObject {
-    struct sObject* next;
-    unsigned char marked;
-    ObjectType type;
+    ObjectType type;                    //< object type: int or pairs
 
     union {
-        /* OBJ_INT */
+        //! OBJ_INT
         int value;
         
-        /* OBJ_TAIL */
+        //! OBJ_PAIL
         struct {
-            struct sObject* head;
-            struct sObject* tail;
+            struct sObject* head;       //< first element in the pair
+            struct sObject* tail;       //< second element in the pair
         };
     };
+
+    struct sObject* next;               //< the next object in the linked list of heap allocated objects
+
+    unsigned char marked;               //< is the object in use or can it be discarded from the memory area
 } Object;
 
 
 
+/* @brief   Virtual Machine data structure. */
 typedef struct {
-    int numObjects;
-    int maxObjects;
-    Object* firstObject;
-    Object* stack[STACK_MAX];
-    int stackSize;
+    int numObjects;                     //< the total number of currently allocated objects
+    int maxObjects;                     //< the number of objects required to trigger a GC
+    Object* firstObject;                //< the first object in the linked list of all objects on the heap
+    Object* stack[STACK_MAX];           //< all allocated objects
+    int stackSize;                      //< the virtual machine stack size
 } VM;
-
-
-
-void assert(int condition, const char* message) {
-    if(!condition) {
-        printf("%s\n", message);
-        exit(1);
-    }
-}
 
 
 
