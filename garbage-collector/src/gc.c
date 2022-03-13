@@ -2,7 +2,7 @@
  * @name    Garbage Collector implementation
  * @author  Egor Bronnikov
  * @edited  13-03-2022
- * */
+ */
 
 
 
@@ -13,7 +13,8 @@
 
 
 
-void test1() {
+/* @brief   Objects on stack are preserved */
+void test1(void) {
   printf("Test 1: Objects on stack are preserved.\n");
   VM* vm = newVM();
   pushInt(vm, 1);
@@ -26,7 +27,8 @@ void test1() {
 
 
 
-void test2() {
+/* @brief   Unreached objects are collected */
+void test2(void) {
   printf("Test 2: Unreached objects are collected.\n");
   VM* vm = newVM();
   pushInt(vm, 1);
@@ -40,7 +42,8 @@ void test2() {
 
 
 
-void test3() {
+/* @brief   Reach nested objects */
+void test3(void) {
   printf("Test 3: Reach nested objects.\n");
   VM* vm = newVM();
   pushInt(vm, 1);
@@ -58,6 +61,7 @@ void test3() {
 
 
 
+/* @brief   Performance test */
 void perfTest(void) {
     printf("Performance Test.\n");
     VM* vm = newVM();
@@ -77,6 +81,7 @@ void perfTest(void) {
 
 
 int main(void) {
-    perfTest();
+    /* perfTest(); */
+    test3();
     return 0;
 }
