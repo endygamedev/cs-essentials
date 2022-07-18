@@ -1,6 +1,10 @@
-SRC_FILES = shell.c
-CC_FLAGS = -std=c99 -Wall -Wextra -Wpedantic
-CC = gcc
+SRC=shell
+
+CC_FLAGS=-std=gnu99 -Wall -Wextra -Wpedantic
+CC=gcc
 
 all:
-	${CC} ${SRC_FILES} ${CC_FLAGS} -o shell
+	$(CC) $(SRC).c -o $(SRC) $(CC_FLAGS)
+
+clean:
+	rm -f $(SRC)

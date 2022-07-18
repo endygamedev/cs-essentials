@@ -8,5 +8,5 @@ In computer science, **garbage collection (GC)** is a form of automatic memory m
 
 ## Article
 1. [Bob Nystrom — «Baby’s First Garbage Collector»](http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/)
-1. [Matthew Plant — «Write a Shell in C»](https://maplant.com/gc.html)
+1. [Matthew Plant — «Write a Simple Garbage Collector in C»](https://maplant.com/gc.html)
 1. [Hans-J. Boehm — «A garbage collector for C and C++»](https://hboehm.info/gc/index.html)
